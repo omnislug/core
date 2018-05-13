@@ -1,0 +1,25 @@
+{
+  "name": "@omnislug/core",
+  "version": "0.0.1",
+  "description": "Omnislug core files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omnislug/core.git"
+  },
+  "author": "Derek Chan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omnislug/core/issues"
+  },
+  "homepage": "https://github.com/omnislug/core#readme",
+  "devDependencies": {
+    "@omnislug/zh": "0.0.4",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {}
+}
