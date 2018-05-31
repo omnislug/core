@@ -1,11 +1,15 @@
 var omnislug = require('../index.js'),
-      expect = require('chai').expect;
+  expect = require('chai').expect;
 
-omnislug.load_module('zh');
-
-describe('Chinese (zh)', function() {
-  it('all hanzi', function(done) {
-    expect(omnislug.toSlug("恭喜發財", ["zh"])).to.be.equal("gong-xi-fa-cai");
+describe('remove diacritics', function() {
+  it('less complex characters', function(done) {
+    expect(omnislug.toSlug('University of Hawaii at Mānoa')).to.be
+      .equal('university-of-hawaii-at-manoa');
+    expect(omnislug.toSlug('Brøderbund')).to.be.equal('broderbund');
+    done();
+  });
+  it('more complex characters', function(done) {
+    expect(omnislug.toSlug('Phở đặc biệt')).to.be.equal('pho-dac-biet');
     done();
   });
 });

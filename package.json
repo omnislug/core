@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/omnislug/core#readme",
   "devDependencies": {
-    "@omnislug/zh": "0.0.4",
+    "babel-eslint": "^8.2.3",
     "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-strict": "^14.0.1",
     "mocha": "^5.1.1"
-  },
-  "dependencies": {}
+  }
 }
